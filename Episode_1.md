@@ -32,6 +32,7 @@ if (helloWorld == 1) { // IF hello world
   	} // END_IF Jesus
 	
 	// ... (Many Line)
+
 } // END_IF hello world
 ```
 Unknown reason of `IF` and `END_IF` statement, with `// END_IF Jesus` in even wrong position.
@@ -138,6 +139,36 @@ public void someFunc() {
 Again, no doc, no comments. Who know those line for.
 
 And WTF is dllm??
+
+## Russian Nesting Doll
+```
+try {
+	// ....
+
+	try {
+		// ...
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+
+	try {
+		// ...
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+
+	try {
+		// ...
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+
+} catch (Exception e) {
+	e.printStackTrace();
+}
+```
+
+At least he use `printStackTrace` instead of do nothing.
 
 ## Disclaimer
 I am not a catholic.
