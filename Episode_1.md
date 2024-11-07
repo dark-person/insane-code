@@ -7,7 +7,7 @@ Although I don't want to, but I guess this is would be a long term writing.
 To prevent any issue, some variable name & function purpose will be modified, but I could ensure it is still insane.
 
 ## Nothing
-```
+```java
 private String nothing = null; // Nothing
 ```
 After checking (in a java class with 8000 lines), it can be confirmed that: this variable has absolute no usage.
@@ -15,7 +15,7 @@ After checking (in a java class with 8000 lines), it can be confirmed that: this
 Thanks.
 
 ## Special Comments
-```
+```java
 if (helloWorld == 1) { // IF hello world
 	if (Jesus) { // IF Jesus
       	// ... (Many Line)
@@ -40,7 +40,7 @@ Unknown reason of `IF` and `END_IF` statement, with `// END_IF Jesus` in even wr
 Jesus.
 
 ## Function usage with talking board
-```
+```java
 public String logError(int i, String msg, User user) {
 	switch (i) {
 		case 1: return "--No-Connection";
@@ -52,7 +52,7 @@ public String logError(int i, String msg, User user) {
 }
 ```
 Above function is found as a utility function.
-That means everytime you use/read, you need to go back to this function to check number `i` meaning.
+That means every time you use/read, you need to go back to this function to check number `i` meaning.
 
 Also:
 - why "Success" will be used in `logError`??
@@ -65,7 +65,7 @@ No document, no comment. Jesus.
 *Another Note: This anti-pattern has use in more than 10 utility function, all commonly use everywhere. I am talking about >100 java classes.*
 
 ## Cat/Monkey Programmer
-```
+```java
 public class hkjfh {
 	//...
 
@@ -83,7 +83,7 @@ I am not kidding, this is what the class look like. I have some assumption for t
 - He is an Alien
 
 ## ResultSet Hell
-```
+```java
 public class Calculator {
 	public ResultSet ao = null;
 	public ResultSet oo = null;
@@ -101,7 +101,7 @@ No comment on this result set naming. No idea why need to use so many.
 Jesus, please give me enough wisdom & patience for review this class (>6000 lines).
 
 ## Cursed Utils
-```
+```java
 public static class Helper {
 	public static void updateSql(Statement stmt, String sql) {
 		try {
@@ -117,7 +117,7 @@ God damn genius.
 
 ## Logs: Talking board
 Talking board again:
-```
+```java
 public void someFunc() {
 	// .....
 	System.out.println("10004");
@@ -141,7 +141,7 @@ Again, no doc, no comments. Who know those line for.
 And WTF is dllm??
 
 ## Russian Nesting Doll
-```
+```java
 try {
 	// ....
 
@@ -172,5 +172,4 @@ At least he use `printStackTrace` instead of do nothing.
 
 ## Disclaimer
 I am not a catholic.
-
 

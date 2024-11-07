@@ -6,7 +6,7 @@ To prevent any issue, some variable name & function purpose will be modified, bu
 
 ## Useless if
 
-``` 
+``` java
 if (false) {
 	// Many many code
 } else {
@@ -24,7 +24,7 @@ We are given some product code such as ABCDEF, KFGEH, and we need to process the
 
 Then lets see what I saw
 
-```
+```java
 /** Class for product ABCDEF. */
 public class productABKDEF {
 	// Many Many Many code
@@ -41,7 +41,7 @@ Every product code in above is correct except the class name. Well done.
 
 ## Please do not copy directly
 
-```
+```java
 public class somethingClass {
 	// ....
 	
@@ -63,7 +63,7 @@ Some background: A product code `ABCDEF` , has a complete name: "Easy Handling P
 
 Then I have found a class like this:
 
-```
+```java
 /** Easy Handling Product. */
 public class RelaxHandProduct {
 	// .....
@@ -76,7 +76,7 @@ I am glad that IDE has function to search keyword (include comment) in all file.
 
 Firstly, I have found a utility classes in some package `utils`
 
-```
+```java
 package com.example.utils;
 
 public class Utils {
@@ -94,7 +94,7 @@ public class Utils {
 
 Then I found these code:
 
-```
+```java
 package com.example.hello.world.abc;
 
 public class SomeClass {
@@ -115,7 +115,7 @@ Nick Young.jpg
 
 Same as above utils
 
-```
+```java
 package com.example.utils;
 
 public class Utils {
@@ -131,7 +131,7 @@ public class Utils {
 
 Then I found one class in `com.example.hello.world.utils`:
 
-```
+```java
 package com.example.hello.world.utils;
 
 public class Utils {
@@ -146,7 +146,7 @@ WTF x2. Nick Young x2
 
 ## Genius Switch Case
 
-```
+```java
 public void doSomething(String val) {
 	int iCode = 0;
 	
@@ -161,7 +161,7 @@ public void doSomething(String val) {
 	
 	// ........ Many code .....
  
- 	// switch (iCode) {
+ 	switch (iCode) {
  		case 0:
  			// Many Lines...
  			break;
